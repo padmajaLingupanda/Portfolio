@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Padmaja Lingupanda | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1f2933;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 15px;
+        }
+
+        section {
+            padding: 40px 10%;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.7s ease;
+        }
+
+        section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            color: #1f2933;
+            margin-bottom: 15px;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills li {
+            list-style: none;
+            background: #2563eb;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 5px;
+        }
+
+        .education, .projects {
+            background: white;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .edu-card {
+            margin-bottom: 15px;
+        }
+
+        .project-card {
+            margin-bottom: 30px;
+        }
+
+        .project-card img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .project-card span {
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #1f2933;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <img src="c:\Users\padhu\Desktop\padhup.jpeg" alt="Profile">
+    <h1>Padmaja Lingupanda</h1>
+    <p>BCA Student | Aspiring Software Developer</p>
+</header>
+
+<!-- ===== ABOUT ===== -->
+<section>
+    <h2>Career Objective</h2>
+    <p>
+        To secure an entry-level IT role where I can apply programming, web development,
+        and problem-solving skills gained during my BCA, while continuously learning new
+        technologies and contributing to efficient, high-quality software solutions.
+    </p>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Cloud Computing</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>MS Office</li>
+    </ul>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section class="education">
+    <h2>Education</h2>
+    <div class="edu-card">
+        <h3>BCA – Aditya School of Computer Sciences</h3>
+        <p>Kakinada | CGPA: 8.5 | 2023–2026</p>
+    </div>
+    <div class="edu-card">
+        <h3>Intermediate – Akshara Junior College</h3>
+        <p>Jaggampeta | CGPA: 93.9 | 2021–2023</p>
+    </div>
+    <div class="edu-card">
+        <h3>SSC – Government High School</h3>
+        <p>Jaggampeta | CGPA: 8.0 | 2021</p>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1581091870627-3d5c1c2c64c5" alt="Fake News Detection">
+        <h3>Fake News Detection System</h3>
+        <p>
+            Developed a Machine Learning model using Python & NLP to classify fake vs real
+            news articles with 92% accuracy.
+        </p>
+        <span>Tools: Python, HTML, CSS, JavaScript</span>
+    </div>
+
+    <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Portfolio Website">
+        <h3>Portfolio Website</h3>
+        <p>
+            Designed and developed a responsive portfolio website to showcase projects
+            and technical skills.
+        </p>
+        <span>Tools: HTML, CSS, JavaScript</span>
+    </div>
+</section>
+
+<!-- ===== INTERNSHIP ===== -->
+<section>
+    <h2>Internship</h2>
+    <p>
+        <strong>Microsoft Certified Azure Fundamentals</strong><br>
+        TENCON INFRA – Hands-on experience with Azure cloud fundamentals
+        and real-world IT environments.
+    </p>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact">
+    <h2>Contact</h2>
+    <p>📞 +91 9704520017</p>
+    <p>📧 padmajalinugupanda04@gmail.com</p>
+    <p>📍 Jaggampeta, India</p>
+    <p>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/padmajaLingupanda" target="_blank">GitHub</a>
+    </p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2025 Padmaja Lingupanda</p>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+    const sections = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", () => {
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop < window.innerHeight - 100) {
+                section.classList.add("show");
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
